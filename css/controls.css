@@ -1,0 +1,472 @@
+/*LanguageSwitch*/
+input.lang_switch 
+{
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	margin: 1px 0 0 1px;
+	padding: 0px;
+	border: 0px;
+	border-radius: 50%;
+	background-color: #F4F4F4;
+	outline: 0px;
+	vertical-align: top;
+	font-family: inherit;
+	font-size: 14px;
+	color: #9E9A9E;
+	cursor: pointer;
+}
+
+input.lang_switch:hover
+{
+	background-color: #FCFCFC;
+}
+
+input.lang_switch_activ
+{
+	display: none;
+}
+
+form.language_switch
+{
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	width: 32px;
+	height: 32px;
+	border-radius: 15px;
+	background-color: transparent;
+	overflow: hidden;
+	transition: width .4s;
+	cursor: pointer;
+}
+
+form.language_switch:hover
+{
+	width: 63px;
+	background-color: #CCCBCB;
+	transition: width .4s;
+}
+
+form.language_switch > span
+{
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	margin-left: 0px;
+	border-radius: 50%;
+	background-color: #EFEFEF;
+	color: #9E9A9E;
+	line-height: 30px;
+	text-align: center;
+	font-size: 14px;
+	transition: all .2s;
+}
+
+form.language_switch:hover > span
+{
+	margin-left: -32px;
+	transition: all .2s;
+}
+/*-------------------------------------------*/
+
+/*SocialPanel*/
+.socialblock
+{
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+	transform: translate(-50% , -50%);
+}
+
+.socialblock > a
+{
+	text-decoration: none;
+}
+
+.socialicon
+{
+	color: #9C9C9C;
+	font-size: 30px;
+	transition: all .4s;
+}
+
+.icon-vk,
+.icon-ok
+{
+	margin-right: 30px;
+}
+
+.icon-vk:hover
+{
+	color: #4c75a3;
+	transition: all .5s;
+}
+
+.icon-ok:hover
+{
+	color: #ed812b;
+	transition: all .5s;
+}
+
+.icon-insta:hover
+{
+	color: #c13584;
+	transition: all .5s;
+}
+/*------------------------------------*/
+
+/*SingForm*/
+.wrapper_sing
+{
+	width: 300px;
+	height: 400px;
+}
+
+.logo
+{
+	display: block;
+	float: left;
+	margin: 0 0 20px -40px;
+	padding: 48px 0 0 43px;
+	color: #000000;
+	text-decoration: none;
+	font-size: 36px;
+	font-family: 'Lobster', sans-serif;
+	background-image: url('../img/logo.png');
+	background-repeat: no-repeat;
+	background-position: top left;
+	background-size: contain;
+
+}
+
+.trans
+{
+	float: right;
+	margin: 63px 7px 0 0;
+	font-size: 18px;
+	color: #9C9C9C;
+	cursor: pointer;
+	transition: all .3s;
+}
+
+.trans:hover
+{
+	color: #141414;
+	transition: all .3s;
+}
+
+input.button_forgot
+{
+	width: 300px;	
+	margin-top: -10px;
+	font-size: 14px;
+	color: #9C9C9C;
+	background-color: transparent;
+	transition: all .3s;
+}
+
+input.button_forgot:hover
+{
+	color: #141414;
+	background-color: transparent;
+	transition: all .3s;
+}
+
+.hiden_form
+{
+	display: none;
+}
+
+.shown_form
+{
+	display: block;
+}
+
+#singin > input,
+#singup > input
+{
+	width: 300px;	
+	margin-bottom: 15px;
+}
+
+/*------------------------------------*/
+
+/*ForgotenPass------------------------*/
+div.forgoten_pass
+{
+	padding: 5px;
+}
+
+input.forgot_submit
+{
+	display: block;
+	float: left;
+	width: 150px;
+	margin-left: -20px;
+	transition: margin-left 1s;
+}
+
+input.forgot_email
+{
+	display: block;
+	float: left;
+	width: 320px;
+	border-radius: 15px 0 0 15px;
+}
+/*------------------------------------*/
+
+.button_back
+{
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	font-size: 32px;
+	color: #888494;
+	border-radius: 50%;
+	background-color: #F4F4F4;
+	transition: all .2s;
+}
+
+.button_back:hover
+{
+	color: #333134;
+	background-color: #F0EFEF;
+	box-shadow: 1px 1px 5px 0 #9E9A9E;
+	transition: all .2s;
+}
+
+/*unit---------------------*/
+.unit
+{
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.unit_show
+{
+	margin-top: 0px;
+	opacity: 1;
+	transition: .5s all cubic-bezier(0, 1, 0, .98);
+}
+
+.unit_hide
+{
+	margin-top: -100%;
+	opacity: 0;
+	transition: .5s all cubic-bezier(0, .81, .79, .08);
+}
+
+.unit_btn
+{
+	position: absolute;
+	width: 27px;
+	height: 27px;
+	left: -2px;
+	top: 0px;
+	background: url('../img/btn.svg');
+	background-size: contain;
+	border-radius: 50%;
+	box-shadow: 1px 1px 3px 1px #CDCDCD;
+}
+
+.unit_btn:hover
+{
+	box-shadow: 2px 2px 3px 1px #B6B6B6;
+	cursor: pointer;
+}
+
+.unit_frame
+{
+	width: 100px;
+	height: 100px;
+	background-color: #FFFFFF;
+	border-radius: 50px;
+	overflow: hidden;
+	transition: .5s box-shadow;
+}
+
+.unit_frame:hover
+{
+	width: 102px;
+	height: 102px;
+	box-shadow: 3px 1px 7px 1px #929891;
+	transform: translate(-1px, -1px);
+	transition: .2s box-shadow;
+}
+
+.unit_frame:hover > img
+{
+	top: 2px;
+	left: 2px;
+	width: 98px;
+	height: 98px;
+}
+
+.unit img
+{
+	position: relative;
+	top: 2px;
+	left: 2px;
+	width: 96px;
+	height: 96px;
+	border-radius: 50%;
+}
+
+.relation_f:before
+{
+	content: "";
+	position: absolute;
+	display: block;
+	width: 55px;
+	height: 50px;
+	top: -50px;
+	left: -5px;
+	background-image: url("../img/fork.svg");
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+	transition: 1s all;
+}
+
+.relation_m:after
+{
+	content: "";
+	position: absolute;
+	display: block;
+	width: 55px;
+	height: 50px;
+	top: -50px;
+	left: 45px;
+	background-image: url("../img/fork.svg");
+	background-repeat: no-repeat;
+	background-position: -55px 0px;
+	background-size: auto 100%;
+	transition: 1s all;
+}
+/*-------------------------*/
+
+/*Sibling------------------*/
+.sibling
+{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.sibling img
+{
+	position: relative;
+	top: 2px;
+	left: 2px;
+	width: 96px;
+	height: 96px;
+	border-radius: 50%;
+}
+
+.sibling_show
+{
+	display: block;
+}
+
+.sibling_hide
+{
+	display: none;
+}
+/*--------------------------*/
+
+/*DataPanel-----------------*/
+.fields
+{
+	display: inline;
+	width: 100%;
+	text-align: center;
+	font-size: 18px;
+	background: inherit;
+}
+
+.fields_date
+{
+	width: 180px;
+	margin-left: 90px;
+	cursor: text;
+}
+
+.label
+{
+	display: block;
+	width: 100%;
+	margin-top: 20px;
+	text-align: center;
+	font-size: 14px;
+}
+
+.fields:hover
+{
+	background: inherit;
+}
+
+.btn_add
+{
+	width: 90%;
+	height: 30px;
+	margin: 5px 12px 5px 12px;
+	padding: 0 10px 0 10px;
+	border: 0px;
+	border-radius: 15px 15px;
+	box-sizing: border-box;
+	outline: 0px;	
+	font-family: inherit;
+	background-color: #9C9C9C;
+	color: white;
+	font-size: 16px;
+	cursor: pointer;
+	transition: all .3s;
+}
+
+.btn_add:hover
+{
+	background-color: #58BC5D;
+	transition: all .3s;
+}
+
+.btn_add:disabled
+{
+	background-color: #D5D5D5;
+	cursor: default;
+	transition: background-color .3s;
+}
+/*--------------------------*/
+
+/*ButtonFileSelection-------*/
+.inputFS
+{
+	display: none;
+}
+
+.buttonFS
+{
+	position: absolute;
+	margin-top: -38px;
+	left: 10px;
+	width: 28px;
+	height: 28px;
+	background-color: #C4C4C4;
+	background-image: url('../img/btn_change_img.svg');
+	background-size: contain;
+	border-radius: 50%;
+	cursor: pointer;
+	z-index: 0;
+	opacity: .8;
+	border: none;
+	outline: none;
+}
+
+.buttonFS:hover
+{
+	background-color: #EFEFEF;
+}
+/*--------------------------*/
+
