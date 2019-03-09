@@ -31,12 +31,12 @@ class Page2 extends Page
 		$panel->nodes->add($aLogo);
 		$panel->nodes->add($subRPanel);
 
-		//Editor---------------------------------------------------------
+		//Editor----------------------------------------------------------
 		$editor = new Div();
 		$editor->id = "editor";
 		$editor->class = "editor";
 		//содержимое editor формируется файлом dataofunits.php через ajax
-		//---------------------------------------------------------------
+		//----------------------------------------------------------------
 
 		//body
 		$body = new Body();
